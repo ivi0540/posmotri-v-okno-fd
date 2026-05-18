@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "prettier": "^3.8.3",
+    "stylelint": "^17.11.1"
+  },
+  "devDependencies": {
+    "stylelint-config-standard": "^40.0.0"
+  },
+  "scripts": {
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint '**/*.css'",
+    "lintfix": "stylelint '**/*.css' --fix"
+  }
+}
