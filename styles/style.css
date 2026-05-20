@@ -158,6 +158,7 @@ ol {
   display: flex;
   align-items: center;
   gap: 5px;
+  cursor: pointer;
 }
 
 .search-form__textfield {
@@ -232,6 +233,7 @@ ol {
 
 .content__card-link {
   display: block;
+  cursor: pointer;
 }
 
 .content__card-link:active {
@@ -318,6 +320,7 @@ ol {
   font-style: normal;
   line-height: normal;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .button:hover {
