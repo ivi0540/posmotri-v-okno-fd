@@ -157,8 +157,8 @@ ol {
 .search-form__textfield {
   width: 225px;
   border: none;
-  border-top: 2px solid var(--white-color);
-  border-bottom: 2px solid var(--white-color);
+  border-top: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
   color: var(--white-color);
   font-family: var(--fira-sans-condensed-font);
   font-weight: 400;
@@ -171,12 +171,11 @@ ol {
 
 .search-form__textfield:focus {
   outline: none;
-  color: var(--white-color);
 }
 
 .search-form__label:has(:focus-visible) {
   outline: 2px solid var(--white-color);
-  outline-offset: 2px;
+  outline-offset: 1px;
 }
 
 .search-form__textfield::placeholder {
@@ -274,6 +273,7 @@ ol {
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
+  max-width: 196px;
 }
 
 .content__video-card-description {
@@ -285,12 +285,12 @@ ol {
   font-size: 18px;
   font-style: normal;
   line-height: 16.2px;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
 
 .content__video-card-thumbnail {
-  min-width: 194px;
+  width: 194px;
   height: 103px;
   object-fit: cover;
   object-position: center;
@@ -337,6 +337,8 @@ ol {
 }
 
 .more-button {
-  width: 100%;
+  width: calc(100% - 8px);
   min-height: 34px;
+  margin-bottom: 4px;
+  margin-left: 4px;
 }
