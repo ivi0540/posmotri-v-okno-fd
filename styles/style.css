@@ -92,6 +92,7 @@ ol {
 } */
 
 .result__video-container {
+  position: relative;
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
@@ -213,6 +214,7 @@ ol {
 }
 
 .content__list-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -349,4 +351,11 @@ ol {
 .more-button {
   width: 100%;
   min-height: 34px;
+}
+
+.preloader {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
 }
